@@ -3,13 +3,11 @@ def binary_search(a,target):
     left=0
     right=n-1
     while left<=right:
-        mid=(left+right)//2
-        
+        mid=(left+right)//2        
         if target==a[mid]:
             return mid
         elif target<a[mid]:
-            right=mid-1
-            print('hi')
+            right=mid-1            
         else:
             left=mid+1
     return -1
